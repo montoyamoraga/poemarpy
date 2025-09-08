@@ -18,7 +18,7 @@ def aleatoreizarMayusculas(texto, probabilidad=0.5):
       if (random.random() < probabilidad):
         caracter = caracter.upper()
       nuevaPalabra = nuevaPalabra + caracter
-    nuevoTexto = nuevoTexto + nuevaPalabra
+    nuevoTexto = nuevoTexto + nuevaPalabra + " "
   return nuevoTexto
 
 def aleatoreizarSaltosDeLineaEntrePalabras(texto, probabilidad=0.5):
@@ -28,6 +28,8 @@ def aleatoreizarSaltosDeLineaEntrePalabras(texto, probabilidad=0.5):
       nuevoTexto = nuevoTexto + palabra
       if (random.random() < probabilidad):
         nuevoTexto = nuevoTexto + "\n"
+      else:
+        nuevoTexto = nuevoTexto + " "
 
 
 def aleatoreizarComasEntrePalabras(texto, probabilidad=0.5):
@@ -37,3 +39,5 @@ def aleatoreizarComasEntrePalabras(texto, probabilidad=0.5):
       nuevoTexto = nuevoTexto + palabra
       if (random.random() < probabilidad):
         nuevoTexto = nuevoTexto + ", "
+      else:
+        nuevoTexto = nuevoTexto + " "
