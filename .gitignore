@@ -1,0 +1,8 @@
+# Apple
+.DS_Store
+
+## Python
+env/
+
+## Twine
+poemar.egg-info
