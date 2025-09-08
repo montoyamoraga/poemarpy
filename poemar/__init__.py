@@ -41,3 +41,10 @@ def aleatoreizarComasEntrePalabras(texto, probabilidad=0.5):
         nuevoTexto = nuevoTexto + ", "
       else:
         nuevoTexto = nuevoTexto + " "
+
+def entrecomillarVersos(texto):
+  nuevoTexto = ""
+  listaVersos = texto.split("\n")
+  for verso in listaVersos:
+    nuevoTexto = nuevoTexto + "\"" + verso + "\"" + "\n"
+  return nuevoTexto
